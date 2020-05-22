@@ -36,7 +36,7 @@ header img{
 }
 
 .content{
-	max-width: 1200px;
+	max-width: 960px;
 	margin: 0 auto;
 	color: #5f6363;
 	text-align: center;
@@ -233,7 +233,7 @@ img {vertical-align: middle;}
 .column {
   float: left;
   width: 33.33%;
-  padding: 10px;
+  padding: 30px;
   /* height: 300px;  removed, so it does not overlaps with other text below */
 }
 
@@ -245,11 +245,11 @@ img {vertical-align: middle;}
 }
 
 img.column-image {
-	max-width: 300px
+	max-width: 250px
 }
 
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .column {
     width: 100%;
     text-align: center; /* If you want the text to be left-aligned on small screens */
@@ -268,8 +268,9 @@ img.column-image {
   float: left;
   width: 50%;
   padding: 10px;
-  /* height: 375px; */
-  text-align: left; 
+  height: 430px;
+  text-align: left;
+  vertical-align: center; 
 
 }
 
@@ -281,11 +282,14 @@ img.column-image {
 }
 
 img.column-image2 {
-	max-width: 545px
+	max-width: 450px;
+  /*need to calculate margin top / bottom to have image vertically center, vertically-align does not work*/
+  margin-top: 67px;
+  margin-bottom: 67px;
 }
 
-/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
-@media screen and (max-width: 600px) {
+/* Add responsiveness - on screens less than 900px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 900px) {
   .column2 {
     width: 100%;
     text-align: center; /* If you want the text to be left-aligned on small screens */

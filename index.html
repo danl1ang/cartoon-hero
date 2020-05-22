@@ -4,8 +4,9 @@
 <html>
 
 <head>
-	<title> Wreck-it Ralph </title>
-	<link rel="stylesheet" type="text/css" href="css/herov1.css">
+	<title> Nana by Ai Yazawa </title>
+	<link rel="stylesheet" type="text/css" href="css/nana.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -14,56 +15,184 @@
 	<!-- the wrapper is the outside contenair which goes around the entire page, including header, content, and footer -->
 		
 		<header>
-			<img src="img/profile.jpg">
-			<h1>Wreck-it Ralph</h1>
+			<img src="img/nana_logo.png">
+			<h1>Nana by Ai Yazawa</h1>
 		</header>
 	
 		<!-- The navigation menu -->
 		<div class="navbar">
-		  <a class="active" href="index.html">Wreck-it Ralph</a>
+		  <a class="active" href="index.html">Nana by Ai Yazawa</a>
+		  <a href="V1.html">Wreck-it Ralph</a>
 		  <a href="V2.html">Wreck-it Ralph v2</a>
 		  <a href="V3.html">Wreck-it Ralph v3</a>
-		  <a href="nana.html">Nana</a>
 		</div>
 		<!-- End nagivation menu -->
+
+		<!-- Slide show starts here -->
+			<!-- Start of HTML section for slideshow -->
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 5</div>
+				  <img src="img/slide1.jpg" style="width:100%">
+				  <div class="text">Nana Osaki</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 5</div>
+				  <img src="img/slide2.jpg" style="width:100%">
+				  <div class="text">Hachi</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 5</div>
+				  <img src="img/slide3.jpg" style="width:100%">
+				  <div class="text">Blackstones</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">4 / 5</div>
+				  <img src="img/slide4.jpg" style="width:100%">
+				  <div class="text">Nana Osaki & Hachi</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">5 / 5</div>
+				  <img src="img/slide5.jpg" style="width:100%">
+				  <div class="text">Trapnest</div>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				</div>
+				<br>
+
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span>
+				  <span class="dot" onclick="currentSlide(4)"></span>
+				  <span class="dot" onclick="currentSlide(5)"></span> 
+			
+			</div>
+			<!-- Ends of HTML section for slideshow -->
+
+			<!-- Start of JAVASCRIPTS for slideshow -->
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+				      slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+				      dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+			</script>
+			<!-- Ends of JAVASCRIPTS section for slideshow -->
+		<!-- SLIDESHOW Ends here -->
+
 
 
 		<div class="content">
 			
-			<h2> About Ralph</h2>
-			<p> An 8=bit bad guy bla bla bla bla bla bla bla bla a lot of interesting content that you are going to be super happy to ready about</p>
+			<br>
+			<br>
+			<br>
 
-			<h2> Ralph's characteristic </h2>
-			<ol>
-			<!-- <ol> tag refers numerical list of items, <il> tag is the NUMBER before the text
-				 <ul> tag refers to bullet list of items, <il> tag is the BULLET before the text
-				 <dl> tag defines the description list, the <dt> tag is the TERM (name), <dd> tag describes each term-->
-				<li> He's super cool </li>
-				<li> He's super strong </li>
-				<li> He's super dooper funny </li>
-				<li> He's super red </li>
-				<li> He's super bla bla </li>
-				<li> He's super I don't know him that well </li> 
-			</ol>
+			<h2> Nana Manga</h2>
+			<p> Nana (ナナ), often stylized as NANA, is a Japanese manga written and illustrated by Ai Yazawa.The manga was published in Shueisha's manga magazine Cookie.[2] Viz Media licensed the series 	for release in North America and published it in their Shojo Beat magazine.[3] Nana was put on hiatus in August 2009, when Yazawa suddenly fell ill. <br><br>
+			In 2005, Nana was adapted into a live-action film starring Mika Nakashima and Aoi Miyazaki.[5] Nakashima returned to star in the 2006 sequel, while Yui Ichikawa replaced Miyazaki.[6] That same year, an anime based on the manga was produced by Madhouse Studios.[7][8] It aired for forty-seven episodes. <br><br>
+			The story follows Nana Komatsu and Nana Osaki, who meet coincidentally on a train to Tokyo. They become roommates and develop a close friendship.</p>
+			
+			<br>
+			<br>
+			<br>
 
-			<img class="big-image" src="img/big-image.jpg">
-			<p class="caption"> This is Ralph in action</p>
+			<!-- 3 columns content starts here (first block) -->
+			<div class="row">
+			  <div class="column">
+			  	<img class="column-image" src="img/nana.jpg">
+			    <h2>Nana Osaki</h2>
+			    <p>Nana Osaki is the main character with Hachi. She is the vocalist of the band Black Stones, also known as Blast. Though Nana may look like a tough punk rocker, she has a kind heart and is a devoted friend. However, she can be possessive and dark, easily becoming emotional to the extent where she has trouble breathing.</p>
+			  </div>
+			  <div class="column">
+			    <img class="column-image" src="img/hachi.jpg">
+			    <h2>Hachi aka Nana Komatsu</h2>
+			    <p>Nana Komatsu comes to Tokyo looking to find her dream, though she initially comes in order to stay in a relationship with her boyfriend, Shouji Endou. Unlike Osaki, however, she comes from a large and happy household, though her childish outlook prevents her from living on her own at first and she is prone to falling in love easily.</p>
+			  </div>
+			  <div class="column">
+			    <img class="column-image" src="img/nobu.jpg">
+			    <h2>Nobuo Terashima</h2>
+			    <p>He is the guitarist of Blast and was the only person able to befriend Nana Oosaki during high school—which coincidentally began their shared love for punk music. He is friendly and optimistic, but at times, he tends to miss the focus of conversations around him. Before Nana's "smoking ban", he is the only non-smoking member of Blast.</p>
+			  </div>
+			</div>
+			<!-- Ends of 3 columns content -->
 
-			<h2> Ralph's friends </h2>
-			<ul>
-				<li> <a href="https://wreckitralph.fandom.com/wiki/Vanellope_von_Schweetz" target="_blank" title="Visit Vannelope's page">Vanellope von Schweetz</a> from Sugar Rush </li>
-				<li> <a href="https://adventuretime.fandom.com/wiki/Jake" target="_blank" title="Visit Jack's page">Jack</a> from Adventure Time</li>
-				<li> <a href="https://wreckitralph.fandom.com/wiki/Fix-It_Felix,_Jr._(character)" target="_blank" title="Visit Jack's page">Fix-It Felix</a> </li>
-			</ul>
+			<!-- 3 columns content starts here (second block) -->
+			<div class="row">
+			  <div class="column">
+			  	<img class="column-image" src="img/yasu.jpg">
+			    <h2>Yasushi Takagi</h2>
+			    <p>Yasushi is the leader of "Blast" who also plays a percussion. He is usually handling the business partnerships and financial decisions needed for the band's success. His favorite cigarette brand is "Black Stone", from which the band got their name. He is also a lawyer in training, despite his "scary" appearance (clean shaven head, many earrings and dark glasses).</p>
+			  </div>
+			  <div class="column">
+			    <img class="column-image" src="img/ren.jpg">
+			    <h2>Ren Honjou</h2>
+			    <p>Ren is a former bassist of "Blast", who is now Trapnest's guitarist. He uses white Fender Precision Bass and black Gibson Les Paul Standard. He is very popular and his music is well received by fans. He and Nana Oosaki were once in a relationship when he was still with Blast. Even after two years apart he was still deeply in love with Oosaki.</p>
+			  </div>
+			  <div class="column">
+			    <img class="column-image" src="img/reira.jpg">
+			    <h2>Layla Serizawa</h2>
+			    <p>Layla is the half-American, half-Japanese lead singer of Trapnest who writes the lyrics for Trapnest's songs. Even though her name is often romanized as "Reira," she is actually named "Layla" after the hit song by Eric Clapton. She secretly has trysts with Shin. Though in love with him, she eventually broke up with him to protect Trapnest from further scandal.</p>
+			  </div>
+			</div>
+			<!-- Ends of 3 columns content -->
+			
+			<br>
+			<br>
+			<br>
 
-		</div>
-
+			<!-- 2 columns content starts here -->
+			<div class="row2" hight="900px">
+			  <div class="column2" style="background-color:#f0e6ed">
+			  	<img class="column-image2" src="img/ai.jpg">
+			  </div>
+			  <div class="column2" style="background-color:#f0e6ed">
+			    <h2>Ai Yazawa, the Artist</h2>
+			    <p>Ai Yazawa (矢沢あい, Yazawa Ai, born March 7, 1967) is a Japanese manga author. While most of Yazawa's manga is published in Japan by Shueisha, publishers of Ribon and Cookie (Nana was serialized in the latter), series like Paradise Kiss have appeared in non-Shueisha magazines such as Zipper, published by Shodensha. <br> <br>
+			    Yazawa's most famous manga include Tenshi Nanka Ja Nai, Neighborhood Story, Paradise Kiss, and Nana. All five volumes of Paradise Kiss were released in English by Vertical, Inc. Nana ran in now-defunct American manga magazine Shojo Beat. In 2003, Yazawa was awarded the Shogakukan Manga Award for Nana.Nana was made into an anime and a successful movie with a sequel in Japan.</p>
+			  </div>
+			 </div>
+			 <!-- Ends of 2 columns content -->
+			
+			<br>
+			<br>
+			<br>
 
 		<footer>
 			<ul>
-				<li> Made by <a href="https://www.google.com" target="_blank" title="Visit Daniela's page">Daniela</a> </li>
-				<li> Made during watching Rich class </li>
-				<li> &copy; 2015 </li> <!-- &copy is the code for copywriting-->
+				<li> Made by <a href="https://www.linkedin.com/in/daniela-yanlei-liang-10405b20" target="_blank" title="Visit Daniela's page">Daniela Liang</a> </li>
+				<li> | Designed for Web Design Principles - Prof. <a href="https://cn.linkedin.com/in/ricky-fransz-4ba4792" target="_blank" title="Visit Ricky Fransz Linkedin profile">Ricky Fransz </li>
+				<li> &copy; 2020 </li> <!-- &copy is the code for copywriting-->
 			</ul>
 		</footer>
 	
